@@ -34,7 +34,7 @@ pipeline {
             stage('CurlTest') {
                 steps {
                     dir("/Users/sarutobi/PROYECTOS_SATELNET/PROYECTOS_GERARDO/DIPLOMADO_DEVOPS/ejemplo-maven") {
-                        sh 'curl -X GET http://localhost:8081/rest/mscovid/test?msg=testing'
+                        sh 'curl -X GET \"http://localhost:8081/rest/mscovid/test?msg=testing\"'
                     }
                 }
             }
