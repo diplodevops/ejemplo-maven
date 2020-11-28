@@ -28,7 +28,7 @@ pipeline {
                 steps {
                     dir("/Users/sarutobi/PROYECTOS_SATELNET/PROYECTOS_GERARDO/DIPLOMADO_DEVOPS/ejemplo-maven") {
                         sh 'mvn spring-boot:run &'
-                        sh 'sleep 10'
+                        sh 'sleep 15'
                     }
                 }
             }
