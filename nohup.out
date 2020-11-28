@@ -1,0 +1,172 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 50710  100 50710    0     0  45962      0  0:00:01  0:00:01 --:--:-- 45974
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.devopsusach2020:DevOpsUsach2020 >-----------------
+[INFO] Building DevOpsUsach2020 0.0.1
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.3.4.RELEASE:run (default-cli) > test-compile @ DevOpsUsach2020 >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ DevOpsUsach2020 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ DevOpsUsach2020 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ DevOpsUsach2020 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/sarutobi/PROYECTOS_SATELNET/PROYECTOS_GERARDO/DIPLOMADO_DEVOPS/ejemplo-maven/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ DevOpsUsach2020 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.3.4.RELEASE:run (default-cli) < test-compile @ DevOpsUsach2020 <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.3.4.RELEASE:run (default-cli) @ DevOpsUsach2020 ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.4.RELEASE)
+
+2020-11-24 21:45:49.329  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : Starting DevOpsUsach2020Application on Gerardos-MacBook-Pro.local with PID 51019 (/Users/sarutobi/PROYECTOS_SATELNET/PROYECTOS_GERARDO/DIPLOMADO_DEVOPS/ejemplo-maven/build/classes started by sarutobi in /Users/sarutobi/PROYECTOS_SATELNET/PROYECTOS_GERARDO/DIPLOMADO_DEVOPS/ejemplo-maven)
+2020-11-24 21:45:49.333  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : No active profile set, falling back to default profiles: default
+2020-11-24 21:45:49.418  INFO 51019 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-24 21:45:49.418  INFO 51019 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-24 21:45:50.904  INFO 51019 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-24 21:45:50.928  INFO 51019 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-24 21:45:50.928  INFO 51019 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-24 21:45:51.040  INFO 51019 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-24 21:45:51.040  INFO 51019 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1622 ms
+2020-11-24 21:45:51.282  INFO 51019 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-24 21:45:51.560  INFO 51019 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-24 21:45:51.608  INFO 51019 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-24 21:45:51.622  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : Started DevOpsUsach2020Application in 3.168 seconds (JVM running for 3.874)
+2020-11-24 21:46:02.895  INFO 51019 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-24 21:46:02.897  INFO 51019 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-24 21:46:02.916  INFO 51019 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-11-24 21:46:02.988  INFO 51019 --- [nio-8081-exec-1] devops.subnivel.Control                  : Proceso exitoso de prueba
+2020-11-24 21:46:06.162  INFO 51019 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.4.RELEASE)
+
+2020-11-24 21:46:06.292  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : Starting DevOpsUsach2020Application on Gerardos-MacBook-Pro.local with PID 51019 (/Users/sarutobi/PROYECTOS_SATELNET/PROYECTOS_GERARDO/DIPLOMADO_DEVOPS/ejemplo-maven/build/classes started by sarutobi in /Users/sarutobi/PROYECTOS_SATELNET/PROYECTOS_GERARDO/DIPLOMADO_DEVOPS/ejemplo-maven)
+2020-11-24 21:46:06.293  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : No active profile set, falling back to default profiles: default
+2020-11-24 21:46:06.527  INFO 51019 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-24 21:46:06.528  INFO 51019 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-24 21:46:06.528  INFO 51019 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-24 21:46:06.538  INFO 51019 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-24 21:46:06.538  INFO 51019 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 242 ms
+2020-11-24 21:46:06.617  INFO 51019 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-24 21:46:06.673  INFO 51019 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-24 21:46:06.685  INFO 51019 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-24 21:46:06.691  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : Started DevOpsUsach2020Application in 0.428 seconds (JVM running for 18.943)
+2020-11-24 21:46:06.694  INFO 51019 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-24 21:49:42.747  INFO 51019 --- [       Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.4.RELEASE)
+
+2020-11-24 21:49:43.050  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : Starting DevOpsUsach2020Application on Gerardos-MacBook-Pro.local with PID 51019 (/Users/sarutobi/PROYECTOS_SATELNET/PROYECTOS_GERARDO/DIPLOMADO_DEVOPS/ejemplo-maven/build/classes started by sarutobi in /Users/sarutobi/PROYECTOS_SATELNET/PROYECTOS_GERARDO/DIPLOMADO_DEVOPS/ejemplo-maven)
+2020-11-24 21:49:43.051  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : No active profile set, falling back to default profiles: default
+2020-11-24 21:49:43.533  INFO 51019 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-24 21:49:43.535  INFO 51019 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-24 21:49:43.536  INFO 51019 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-24 21:49:43.548  INFO 51019 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-24 21:49:43.548  INFO 51019 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 486 ms
+2020-11-24 21:49:43.687  INFO 51019 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-24 21:49:43.738  INFO 51019 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-24 21:49:43.755  INFO 51019 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-24 21:49:43.765  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : Started DevOpsUsach2020Application in 0.89 seconds (JVM running for 236.012)
+2020-11-24 21:49:43.766  INFO 51019 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-24 21:49:48.643  INFO 51019 --- [      Thread-14] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.4.RELEASE)
+
+2020-11-24 21:49:48.770  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : Starting DevOpsUsach2020Application on Gerardos-MacBook-Pro.local with PID 51019 (/Users/sarutobi/PROYECTOS_SATELNET/PROYECTOS_GERARDO/DIPLOMADO_DEVOPS/ejemplo-maven/build/classes started by sarutobi in /Users/sarutobi/PROYECTOS_SATELNET/PROYECTOS_GERARDO/DIPLOMADO_DEVOPS/ejemplo-maven)
+2020-11-24 21:49:48.770  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : No active profile set, falling back to default profiles: default
+2020-11-24 21:49:49.049  INFO 51019 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-24 21:49:49.050  INFO 51019 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-24 21:49:49.050  INFO 51019 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-24 21:49:49.061  INFO 51019 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-24 21:49:49.061  INFO 51019 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 288 ms
+2020-11-24 21:49:49.173  INFO 51019 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-24 21:49:49.253  INFO 51019 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-24 21:49:49.263  INFO 51019 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-24 21:49:49.269  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : Started DevOpsUsach2020Application in 0.538 seconds (JVM running for 241.517)
+2020-11-24 21:49:49.272  INFO 51019 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-24 21:49:50.723  INFO 51019 --- [      Thread-19] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.4.RELEASE)
+
+2020-11-24 21:49:50.833  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : Starting DevOpsUsach2020Application on Gerardos-MacBook-Pro.local with PID 51019 (/Users/sarutobi/PROYECTOS_SATELNET/PROYECTOS_GERARDO/DIPLOMADO_DEVOPS/ejemplo-maven/build/classes started by sarutobi in /Users/sarutobi/PROYECTOS_SATELNET/PROYECTOS_GERARDO/DIPLOMADO_DEVOPS/ejemplo-maven)
+2020-11-24 21:49:50.833  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : No active profile set, falling back to default profiles: default
+2020-11-24 21:49:51.138  INFO 51019 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-24 21:49:51.139  INFO 51019 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-24 21:49:51.140  INFO 51019 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-24 21:49:51.164  INFO 51019 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-24 21:49:51.169  INFO 51019 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 332 ms
+2020-11-24 21:49:51.285  INFO 51019 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-24 21:49:51.335  INFO 51019 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-24 21:49:51.345  INFO 51019 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-24 21:49:51.353  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : Started DevOpsUsach2020Application in 0.545 seconds (JVM running for 243.6)
+2020-11-24 21:49:51.355  INFO 51019 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-24 21:50:01.869  INFO 51019 --- [      Thread-24] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.4.RELEASE)
+
+2020-11-24 21:50:01.970  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : Starting DevOpsUsach2020Application on Gerardos-MacBook-Pro.local with PID 51019 (/Users/sarutobi/PROYECTOS_SATELNET/PROYECTOS_GERARDO/DIPLOMADO_DEVOPS/ejemplo-maven/build/classes started by sarutobi in /Users/sarutobi/PROYECTOS_SATELNET/PROYECTOS_GERARDO/DIPLOMADO_DEVOPS/ejemplo-maven)
+2020-11-24 21:50:01.971  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : No active profile set, falling back to default profiles: default
+2020-11-24 21:50:02.208  INFO 51019 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-11-24 21:50:02.209  INFO 51019 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-24 21:50:02.209  INFO 51019 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-24 21:50:02.217  INFO 51019 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-24 21:50:02.218  INFO 51019 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 244 ms
+2020-11-24 21:50:02.299  INFO 51019 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-24 21:50:02.361  INFO 51019 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-24 21:50:02.371  INFO 51019 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-11-24 21:50:02.376  INFO 51019 --- [  restartedMain] c.d.DevOpsUsach2020Application           : Started DevOpsUsach2020Application in 0.435 seconds (JVM running for 254.623)
+2020-11-24 21:50:02.379  INFO 51019 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-11-24 21:50:11.767  INFO 51019 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-24 21:50:11.767  INFO 51019 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-24 21:50:11.774  INFO 51019 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-11-24 21:50:11.777  INFO 51019 --- [nio-8081-exec-1] devops.subnivel.Control                  : Proceso exitoso de prueba
+2020-11-24 22:10:40.682  INFO 51019 --- [nio-8081-exec-3] devops.subnivel.Control                  : Proceso exitoso de prueba
