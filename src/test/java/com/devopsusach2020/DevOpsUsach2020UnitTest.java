@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DevOpsUsach2020ApplicationTestsdos {
+class DevOpsUsach2020UnitTest {
 
 	@Test
 	void otracosa() {
