@@ -1,5 +1,5 @@
 # Getting Started
-prueba
+prueba2
 ## Windows
 
 ### Compile Code
