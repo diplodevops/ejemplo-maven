@@ -9,5 +9,8 @@ class DevOpsUsach2020ApplicationTests {
 	@Test
 	void contextLoads() {
 	}
+        @Test 
+        void  test_nuevo(){
+        }
 
 }
