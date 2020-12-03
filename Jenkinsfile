@@ -27,7 +27,7 @@ pipeline {
         stage('run jar') {
             steps {
                 dir("C:\\\\Users\\\\usuario}\\\\developed\\\\ejemplo-maven"){
-                sh './mvnw spring-boot:run'
+                 sh 'JENKINS_NODE_COOKIE=dontKillMe nohup bash mvnw spring-boot:run &'
                
                 }
             }
