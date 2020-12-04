@@ -1,36 +1,42 @@
-def call (tareas4m3){
 pipeline {
-        agent any
+    agent any
     stages {
-        stage ('compile'){
+        stage ('Compile'){
                 steps {
-                dir ("/Users/Joram/Devops/Modulo3/Clase4/ejemplo-maven"){
                 sh './mvnw clean compile -e'
                 }
-                }
         }
-        stage ('test'){
+        stage ('Test'){
                 steps {
-                dir ("/Users/Joram/Devops/Modulo3/Clase4/ejemplo-maven"){    
                 sh './mvnw clean test -e'
                 }
-                }
         }
-        stage ('jar'){
+        stage ('Jar'){
                 steps {
-                dir ("/Users/Joram/Devops/Modulo3/Clase4/ejemplo-maven"){    
                 sh './mvnw clean package -e'
                 }
-                }
         }
-        stage ('run jar'){
+        stage ('SonarQube'){
                 steps {
-                dir ("/Users/Joram/Devops/Modulo3/Clase4/ejemplo-maven"){ 
+                withSonarQubeEnv(installationName: 'sonar'{
+                sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
+                }
+                }                
+        }
+        stage ('Run Jar'){
+                steps {
                 sh 'nohup bash mvnw spring-boot:run &'
                 }
-                }
-                
         }
+        stage ('Sleep'){
+                steps {
+                sh 'sleep 30'
+                }
+         }        
+        stage ('Testing'){
+                steps {
+                sh 'curl -X GET "http://localhost:8080/rest/mscovid/test?msg=testing"'
+                } 
+                }
     }
-}
 }
