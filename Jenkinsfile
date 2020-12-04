@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh 'cd /Users/servidorcasa/Documents/Cursos/2020_devops/26_10_2020/ejemplo-maven'                
                 sh 'nohup mvn spring-boot:run -Dserver.port=8081 &'
-                sleep 20 
+                sleep 25 
             }
         }  
         stage('Testing Application') {
