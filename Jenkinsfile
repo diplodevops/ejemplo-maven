@@ -19,24 +19,15 @@ pipeline {
         stage ('SonarQube'){
                 steps {
                 withSonarQubeEnv(installationName: 'sonar'){
-                sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
+                sh './mvnw org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
                 }
-                }                
+            }                    
         }
-        stage ('Run Jar'){
-                steps {
-                sh 'nohup bash mvnw spring-boot:run &'
-                }
+        stage ('uploadNexus'){
+            step { 
+                nexusPublisher nexusInstanceId: 'nexus', nexusRepositoryId: 'test-nexus', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: 'jar', filePath: 'http://127.0.0.1:8081/repository/test-nexus/0/0/1/0.0.1/0.0.1/0.0.1-0.0.1.jar']], mavenCoordinate: [artifactId: '0.0.1', groupId: '0.0.1', packaging: 'jar', version: '0.0.1']]]
+            }
         }
-        stage ('Sleep'){
-                steps {
-                sh 'sleep 30'
-                }
-         }        
-        stage ('Testing'){
-                steps {
-                sh 'curl -X GET "http://localhost:8080/rest/mscovid/test?msg=testing"'
-                } 
-                }
+
     }
 }
