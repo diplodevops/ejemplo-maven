@@ -1,32 +1,52 @@
 pipeline {
     agent any
     stages {
-        stage('Compile Code') {
-            steps {
-                sh './mvnw clean compile -e'
-            }
-        }
-        stage('Test Code') {
-            steps {              
-                sh './mvnw clean test -e'
-            }
-        }
-        stage('Jar ') {
-            steps {               
-                sh './mvnw clean package -e'
-            }
-        }
-        stage('SonarQube') {
-           steps {
-             withSonarQubeEnv(installationName: 'sonar') { 
-             sh './mvnw org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
-             }
+        stage('Compile') {
+         steps {    
+          sh 'mvn clean compile -e'
           }
+         }
+        stage('Test') {
+         steps {
+	        sh 'mvn clean test -e'
+         }
+        } 
+      stage('Jar') {
+        steps { 
+         sh 'mvn clean package -e'
+       }
+      }
+      stage('sonar') {
+          steps {
+          withSonarQubeEnv(installationName: 'Sonar') { 
+           sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
         }
-        stage('Upload Nexus') {
-            steps {               
-                nexusPublisher nexusInstanceId: 'nexus', nexusRepositoryId: 'test-nexus', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: 'jar', filePath: '/Users/joram/DevOpsUsach2020-0.0.1.jar']], mavenCoordinate: [artifactId: 'DevOpsUsach2020', groupId: 'com.devopsusach2020', packaging: 'jar', version: '0.0.1']]]
-            }
-        }  
-    }
-}
+       }
+      }  
+      stage('Run') {
+        steps {
+	       sh 'mvn spring-boot:run &'
+       } 
+      }
+      stage('Wait up app') {
+        steps {
+	       sh 'sleep 10'
+       } 
+      }
+      stage('Testing app') {
+       steps {
+         sh 'curl -X GET http://localhost:8081/rest/mscovid/test?msg=testing'
+        }
+       }
+      stage('Result Chile') {
+       steps {
+        sh 'curl -X GET http://localhost:8081/rest/mscovid/estadoPais?pais=CHILE'
+        }
+       }
+      stage('Result Mundial') {
+       steps {
+        sh 'curl -X GET http://localhost:8081/rest/mscovid/estadoMundial'
+        }
+       } 
+      }
+     }    
