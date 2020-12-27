@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Compile') {
          steps {    
-          sh 'mvn clean compile -e'
+          sh './mvnw clean compile -e'
           }
          }
         stage('Test') {
          steps {
-	        sh 'mvn clean test -e'
+	        sh './mvnw clean test -e'
          }
         } 
       stage('Jar') {
         steps { 
-         sh 'mvn clean package -e'
+         sh './mvnw clean package -e'
        }
       }
       stage('sonar') {
@@ -25,12 +25,12 @@ pipeline {
       }  
       stage('Run') {
         steps {
-	       sh 'mvn spring-boot:run &'
+	       sh './mvnw spring-boot:run &'
        } 
       }
       stage('Wait up app') {
         steps {
-	       sh 'sleep 10'
+	       sh 'sleep 30'
        } 
       }
       stage('Testing app') {
