@@ -19,13 +19,13 @@ jobs:
           command: "echo Hello, World Usach 2021!"
       - run:
           name: "Compile Code"
-          command: "./mvnw clean compile -e"    
+          command: "maven ./mvnw clean compile -e"    
       - run:
           name: "Test Code"
-          command: "./mvnw clean test -e"
+          command: "mave ./mvnw clean test -e"
       - run:
           name: "Jar Code"
-          command: "./mvnw clean package -e"
+          command: "maven ./mvnw clean package -e"
           
 
 # Invoke jobs via workflows
