@@ -19,13 +19,13 @@ jobs:
           command: "echo Hello, World Usach 2021!"
       - run:
           name: "Compile Code"
-          command: "mvn ./mvnw clean compile -e"    
+          command: "mvn clean compile -e"    
       - run:
           name: "Test Code"
-          command: "mvn ./mvnw clean test -e"
+          command: "mvn clean test -e"
       - run:
           name: "Jar Code"
-          command: "mvn ./mvnw clean package -e"
+          command: "mvn clean package -e"
           
 
 # Invoke jobs via workflows
