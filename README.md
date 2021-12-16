@@ -1,6 +1,6 @@
 # Getting Started
 
-Cambio correspondiente a feature-b
+Cambio correspondiente a mezcla entre feature-a y feature-b
 
 ## Windows
 
