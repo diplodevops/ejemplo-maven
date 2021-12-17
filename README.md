@@ -34,7 +34,7 @@
 * Background: nohup bash mvnw spring-boot:run &
 
 ### Testing Application
-* curl -X GET 'http://localhost:8081/rest/mscovid/test?msg=testing'
+* curl -X GET 'http://localhost:8082/rest/mscovid/test?msg=testing'
 #### Using Docker to test this app.
 ```bash
 ### Compile Code
@@ -47,4 +47,4 @@ docker run -it --rm -v $(pwd):/code --workdir /code maven mvn clean test -e
 docker run -it --rm -v $(pwd):/code --workdir /code maven mvn clean package -e
 
 ### Run Jar
-docker run -it --rm -p 8082:8081  -v $(pwd):/code --workdir /code maven ./mvnw spring-boot:run
+docker run -it --rm -p 8082:8081  -v $(pwd):/code --workdir /code maven mvn spring-boot:run
