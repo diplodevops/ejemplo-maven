@@ -29,10 +29,12 @@ jobs:
       - run:
           name: "Ejecucion Code"
           command: "mvn spring-boot:run"
+          parallelism: 1
 
       - run:
           name: "Ejecucion endpoint"
           command: "curl http://localhost:8081/rest/mscovid/test?msg=testing"
+          parallelism: 1
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
