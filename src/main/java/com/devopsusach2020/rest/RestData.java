@@ -27,7 +27,11 @@ public class RestData {
 	public @ResponseBody Pais getData(@RequestParam(name = "msg") String message){
 		
 		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		
+		int a=0;
+		while (a<1){
+			Pais response = new Pais();
+		}
+
 		Pais response = new Pais();
 		response.setMensaje("Mensaje Recibido: " + message);
 		return response;
