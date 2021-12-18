@@ -26,6 +26,9 @@ jobs:
       - run:
           name: "Jar Code"
           command: "mvn clean package -e"
+      - run:
+          name: "Ejecucion Code"
+          command: "mvn spring-boot:run"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
