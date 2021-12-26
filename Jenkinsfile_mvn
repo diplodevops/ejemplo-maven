@@ -35,7 +35,7 @@ pipeline {
             steps {
                 script {
                 sh "echo 'Correr'"
-                sh "./mvnw spring-boot:run"
+                sh "nohup bash mvnw spring-boot:run &"
                 }
             }
         }
