@@ -4,7 +4,7 @@ def jsonParse(def json) {
     new groovy.json.JsonSlurperClassic().parseText(json)
 }
 pipeline {
-    agent docker
+    agent any
     stages {
 
         stage("paso 1"){
