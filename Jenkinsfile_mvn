@@ -4,14 +4,14 @@ def jsonParse(def json) {
     new groovy.json.JsonSlurperClassic().parseText(json)
 }
 pipeline {
-    agent any
+    agent Docker
     stages {
 
         stage("paso 1"){
             steps {
                 script {
                 sh "echo 'Compile'"
-                ./mvnw clean compile -e
+                sh "./mvnw clean compile -e"
                 }
             }
         }
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                 sh "echo 'Test'"
-                ./mvnw clean test -e
+                sh "./mvnw clean test -e"
                 }
             }
         }
@@ -27,7 +27,7 @@ pipeline {
             steps {
                 script {
                 sh "echo 'Build"
-                ./mvnw clean package -e
+                sh "./mvnw clean package -e"
                 }
             }
         }
