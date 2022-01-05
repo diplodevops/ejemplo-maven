@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Compile') {
+        steps {
+                sh "./mvnw.cmd clean compile -e"
+            }
+        }
+        stage('Test') {
+            steps {
+                sh "./mvnw.cmd clean test -e"
+            }
+        }
+        stage('Jar') {
+            steps {
+                sh "./mvnw.cmd clean package -e"
+            }
+        }
+        stage('Run') {
+            steps {
+                sh "./mvnw.cmd spring-boot:run"
+            }
+        stage('TestingAPP') {
+            steps {
+                sh "curl -X GET 'http://localhost:8081/rest/mscovid/test?msg=testing'"
+            }
+        }
+    }
+}
