@@ -25,15 +25,15 @@ pipeline {
         stage('Run Jar') {
             steps {
                     script {
-                        sh './mvnw spring-boot:run'
-                        sleep 20
+                        sh 'JENKINS_NODE_COOKIE=dontKillMe nohup bash mvnw spring-boot:run &'
+                        
                     }
             }
         }
         stage('Testing Application') {
             steps {
                     script {
-                        sh(script: 'curl http://localhost:8081/rest/mscovid/test?msg=testing', returnStdout: true)
+                        sh 'curl http://localhost:8081/rest/mscovid/test?msg=testing'
                     }
             }
         }
