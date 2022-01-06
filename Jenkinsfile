@@ -3,37 +3,38 @@ pipeline {
 
     stages {
         stage('Compile') {
-         steps {
+            steps {
                 script {
-                sh './mvnw.cmd clean compile -e'
+                    sh './mvnw clean compile -e'
                 }
             }
         }
         stage('Test') {
-            script {
-                 steps {
-                sh './mvnw.cmd clean test -e'
+            steps {
+                script {
+                    sh './mvnw clean test -e'
                 }
             }
         }
         stage('Jar') {
             steps {
-                 script {
-                sh './mvnw.cmd clean package -e'
-                 }
+                script {
+                    sh './mvnw clean package -e'
+                }
             }
         }
         stage('Run') {
             steps {
                 script {
-                sh './mvnw.cmd spring-boot:run'
+                    sh 'nohup bash mvnw spring-boot:run &'
+                    sleep 20
                 }
             }
-         }
-        stage('TestingAPP') {
+        }
+        stage('TestApp') {
             steps {
                 script {
-                sh "curl -X GET 'http://localhost:8081/rest/mscovid/test?msg=testing'"
+                    sh "curl -X GET 'http://localhost:8081/rest/mscovid/test?msg=testing'"
                 }
             }
         }
