@@ -18,14 +18,14 @@ pipeline {
         stage('Jar Code') {
             steps {
                     script {
-                        sh './mvnw.cmd clean package -e'
+                        sh './mvnw clean package -e'
                     }
             }
         }
         stage('Run Jar') {
             steps {
                     script {
-                        sh './mvnw.cmd spring-boot:run'
+                        sh './mvnw spring-boot:run'
                         sleep 20
                     }
             }
