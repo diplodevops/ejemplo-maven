@@ -1,6 +1,6 @@
 # Getting Started
 
-Hola
+Hola Mundo
 ## Windows
 
 ### Compile Code
