@@ -1,5 +1,6 @@
 # Getting Started
 
+Hola
 ## Windows
 
 ### Compile Code
