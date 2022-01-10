@@ -36,6 +36,7 @@
 ### Testing Application
 * curl -X GET 'http://localhost:8081/rest/mscovid/test?msg=testing'
 
+
 # Using Docker to test this app.
 ⚠️ **Is mandatory to use Powershell in Windows**
 ## Docker in Windows
