@@ -1,0 +1,96 @@
+2022-01-10 15:42:33,285 INFO o.a.j.u.JMeterUtils: Setting Locale to es_419
+2022-01-10 15:42:33,347 INFO o.a.j.u.JMeterUtils: Could not find resources for 'es_419', using 'es'
+2022-01-10 15:42:33,349 INFO o.a.j.JMeter: Loading user properties from: /Users/luismella/tools/apache-jmeter-5.3/bin/user.properties
+2022-01-10 15:42:33,350 INFO o.a.j.JMeter: Loading system properties from: /Users/luismella/tools/apache-jmeter-5.3/bin/system.properties
+2022-01-10 15:42:33,352 INFO o.a.j.JMeter: Copyright (c) 1998-2020 The Apache Software Foundation
+2022-01-10 15:42:33,353 INFO o.a.j.JMeter: Version 5.3
+2022-01-10 15:42:33,354 INFO o.a.j.JMeter: java.version=11.0.12
+2022-01-10 15:42:33,354 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2022-01-10 15:42:33,354 INFO o.a.j.JMeter: os.name=Mac OS X
+2022-01-10 15:42:33,355 INFO o.a.j.JMeter: os.arch=x86_64
+2022-01-10 15:42:33,355 INFO o.a.j.JMeter: os.version=11.5
+2022-01-10 15:42:33,355 INFO o.a.j.JMeter: file.encoding=UTF-8
+2022-01-10 15:42:33,356 INFO o.a.j.JMeter: java.awt.headless=null
+2022-01-10 15:42:33,356 INFO o.a.j.JMeter: Max memory     =4294967296
+2022-01-10 15:42:33,356 INFO o.a.j.JMeter: Available Processors =4
+2022-01-10 15:42:33,373 INFO o.a.j.JMeter: Default Locale=español (Latinoamérica)
+2022-01-10 15:42:33,373 INFO o.a.j.JMeter: JMeter  Locale=español (Latinoamérica)
+2022-01-10 15:42:33,374 INFO o.a.j.JMeter: JMeterHome=/Users/luismella/tools/apache-jmeter-5.3
+2022-01-10 15:42:33,374 INFO o.a.j.JMeter: user.dir  =/Users/luismella/diplomado/ejemplo-maven-fork
+2022-01-10 15:42:33,374 INFO o.a.j.JMeter: PWD       =/Users/luismella/diplomado/ejemplo-maven-fork
+2022-01-10 15:42:33,382 INFO o.a.j.JMeter: IP: 190.196.113.68 Name: mella.local FullName: 190.196.113.68
+2022-01-10 15:42:34,767 INFO o.a.j.JMeter: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2022-01-10 15:42:37,209 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2022-01-10 15:42:44,541 WARN o.j.r.PluginManager: Found JAR conflict: /Users/luismella/tools/apache-jmeter-5.3/lib/ext/google-cloud-pubsub-1.113.4.jar and /Users/luismella/tools/apache-jmeter-5.3/lib/ext/google-cloud-pubsub-1.111.2.jar
+2022-01-10 15:42:49,568 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=google_cloud-25d9c378f2d4cf0e481503ce5557f8e1-gui
+2022-01-10 15:42:52,012 INFO o.j.r.PluginManager: Plugins Status: [jmeter-pubsub-sampler=1.1, jpgc-plugins-manager=1.6, jmeter-core=5.3, jmeter-ftp=5.3, jmeter-http=5.3, jmeter-jdbc=5.3, jmeter-jms=5.3, jmeter-junit=5.3, jmeter-java=5.3, jmeter-ldap=5.3, jmeter-mail=5.3, jmeter-mongodb=5.3, jmeter-native=5.3, jmeter-tcp=5.3, jmeter-components=5.3]
+2022-01-10 15:42:52,016 INFO o.j.r.PluginManagerMenuItem: Plugins Manager has upgrades: [jpgc-plugins-manager]
+2022-01-10 15:43:09,124 INFO o.a.j.s.FileServer: Default base='/Users/luismella/diplomado/ejemplo-maven-fork'
+2022-01-10 15:43:09,130 INFO o.a.j.g.a.Load: Loading file: /Users/luismella/tools/StatustoCancelation.jmx
+2022-01-10 15:43:09,130 INFO o.a.j.s.FileServer: Set new base='/Users/luismella/tools'
+2022-01-10 15:43:09,641 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2022-01-10 15:43:09,660 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2022-01-10 15:43:09,662 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2022-01-10 15:43:09,664 INFO o.a.j.s.SaveService: Loading file: /Users/luismella/tools/StatustoCancelation.jmx
+2022-01-10 15:43:10,397 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2022-01-10 15:43:10,397 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2022-01-10 15:43:10,397 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2022-01-10 15:43:10,398 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2022-01-10 15:43:11,046 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2022-01-10 15:43:11,250 INFO o.a.j.s.FileServer: Set new base='/Users/luismella/tools'
+2022-01-10 15:43:26,213 INFO o.a.j.g.a.Load: Loading file: /Users/luismella/tools/StatusShipmentRetail Test Plan.jmx
+2022-01-10 15:43:26,213 INFO o.a.j.s.FileServer: Set new base='/Users/luismella/tools'
+2022-01-10 15:43:26,213 INFO o.a.j.s.SaveService: Loading file: /Users/luismella/tools/StatusShipmentRetail Test Plan.jmx
+2022-01-10 15:43:26,438 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2022-01-10 15:43:26,524 INFO o.a.j.s.FileServer: Set new base='/Users/luismella/tools'
+2022-01-10 16:00:54,843 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-01-10 16:00:54,846 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-01-10 16:00:54,848 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-01-10 16:00:54,853 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2022-01-10 16:00:54,853 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2022-01-10 16:00:57,872 INFO c.d.j.p.c.PublisherConfig: Publisher connection established with the boss-shipment-retail successfully !!
+2022-01-10 16:00:57,873 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-01-10 16:00:57,998 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : OrderEvent Test Plan
+2022-01-10 16:00:57,998 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group OrderEvent Test Plan.
+2022-01-10 16:00:57,998 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-01-10 16:00:57,999 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=0 delayedStart=false
+2022-01-10 16:00:58,023 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-01-10 16:00:58,026 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-01-10 16:00:58,027 INFO o.a.j.t.JMeterThread: Thread started: OrderEvent Test Plan 1-1
+2022-01-10 16:01:04,554 INFO o.a.j.t.JMeterThread: Thread is done: OrderEvent Test Plan 1-1
+2022-01-10 16:01:04,554 INFO o.a.j.t.JMeterThread: Thread finished: OrderEvent Test Plan 1-1
+2022-01-10 16:01:04,554 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-01-10 16:01:04,587 INFO c.d.j.p.c.PublisherConfig: Publisher connection Terminated successfully !!
+2022-01-10 16:01:04,588 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-01-11 18:28:47,354 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-01-11 18:28:47,398 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-01-11 18:28:47,652 INFO c.d.j.p.c.PublisherConfig: Publisher connection established with the boss-shipment-retail successfully !!
+2022-01-11 18:28:47,658 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-01-11 18:28:49,079 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : OrderEvent Test Plan
+2022-01-11 18:28:49,079 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group OrderEvent Test Plan.
+2022-01-11 18:28:49,079 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-01-11 18:28:49,079 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=0 delayedStart=false
+2022-01-11 18:28:49,083 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-01-11 18:28:49,083 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-01-11 18:28:49,098 INFO o.a.j.t.JMeterThread: Thread started: OrderEvent Test Plan 1-1
+2022-01-11 18:28:49,951 INFO o.a.j.t.JMeterThread: Thread is done: OrderEvent Test Plan 1-1
+2022-01-11 18:28:49,951 INFO o.a.j.t.JMeterThread: Thread finished: OrderEvent Test Plan 1-1
+2022-01-11 18:28:49,952 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-01-11 18:28:49,960 INFO c.d.j.p.c.PublisherConfig: Publisher connection Terminated successfully !!
+2022-01-11 18:28:49,960 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-01-11 18:30:30,741 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-01-11 18:30:30,742 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-01-11 18:30:30,767 INFO c.d.j.p.c.PublisherConfig: Publisher connection established with the boss-shipment-retail successfully !!
+2022-01-11 18:30:30,769 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-01-11 18:30:30,860 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : OrderEvent Test Plan
+2022-01-11 18:30:30,860 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group OrderEvent Test Plan.
+2022-01-11 18:30:30,860 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-01-11 18:30:30,861 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=0 delayedStart=false
+2022-01-11 18:30:30,862 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-01-11 18:30:30,863 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-01-11 18:30:30,865 INFO o.a.j.t.JMeterThread: Thread started: OrderEvent Test Plan 1-1
+2022-01-11 18:30:31,363 INFO o.a.j.t.JMeterThread: Thread is done: OrderEvent Test Plan 1-1
+2022-01-11 18:30:31,363 INFO o.a.j.t.JMeterThread: Thread finished: OrderEvent Test Plan 1-1
+2022-01-11 18:30:31,363 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-01-11 18:30:31,368 INFO c.d.j.p.c.PublisherConfig: Publisher connection Terminated successfully !!
+2022-01-11 18:30:31,368 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
