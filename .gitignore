@@ -10,3 +10,13 @@ buildNumber.properties
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
+
+.DS_Store
+
+.scannerwork/.sonar_lock
+
+.scannerwork/report-task.txt
+
+.idea/
+
+*.iml
