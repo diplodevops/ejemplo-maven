@@ -8,6 +8,12 @@ pipeline {
                     }
             }
         }
+        stage('Sonar') {
+            def scannerHome = tool 'sonar-scanner';
+            withSonarQubeEnv('http://localhost:9000') { 
+                sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=ejemplo-maven -Dsonar.sources=src/main/java -Dsonar.projectBaseDir=/Users/ricardoquiroga/Desktop/DEVOPS_USACH/Modulo3/ejemplo-maven/ -Dsonar.java.binaries=build/classes"
+           }
+        }
         stage('Test') {
             steps {
                     script {
