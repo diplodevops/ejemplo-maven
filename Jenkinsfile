@@ -11,7 +11,7 @@ pipeline {
         stage('Sonar') {
              steps {
                     withSonarQubeEnv('sonarqube-server') {
-                            sh '$sonar-scanner/bin/sonar-scanner'
+                            sh '$sonar-scanner/bin/sonar-scanner -Dsonar.java.binaries=. -Dsonar.projectKey=ejemplo-maven -Dsonar.sources=src'
                     }
              }
         }
