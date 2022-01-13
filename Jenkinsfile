@@ -12,7 +12,7 @@ pipeline {
          stage('SonarQube analysis'){
             steps{
                 script{
-                    def scannerHome = tool 'sonnar-scanner';
+                    def scannerHome = tool 'sonar-scanner';
                     withSonarQubeEnv('my sonar qube server'){
                         sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=ejemplo-maven -Dsonar.sources=src -Dsonar.java.binaries=build"
                     }
