@@ -9,10 +9,15 @@ pipeline {
             }
         }
         stage('Sonar') {
-            def scannerHome = tool 'sonar-scanner';
-            withSonarQubeEnv('http://localhost:9000') { 
-                sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=ejemplo-maven -Dsonar.sources=src/main/java -Dsonar.java.binaries=build/classes"
-           }
+             steps {
+                    script {
+                        def scannerHome = tool 'sonar-scanner';
+                        withSonarQubeEnv('http://localhost:9000') { 
+                            sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=ejemplo-maven -Dsonar.sources=src/main/java -Dsonar.java.binaries=build/classes"
+                        }
+                    }
+            }
+           
         }
         stage('Test') {
             steps {
