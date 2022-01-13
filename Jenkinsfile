@@ -11,7 +11,7 @@ pipeline {
         stage('Sonar') {
              steps {
                     withSonarQubeEnv('sonarqube-server') {
-                            sh '$sonar-scanner/bin/sonar-scanner -Dsonar.projectKey=ejemplo-maven -Dsonar.projectBaseDir=/Users/ricardoquiroga/Desktop/DEVOPS_USACH/Modulo3/ejemplo-maven -Dsonar.login=626d341fbac7e62b9ad8a4e5344c19ceafd1986d'
+                            sh '$sonar-scanner/bin/sonar-scanner'
                     }
              }
         }
