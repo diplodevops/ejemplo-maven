@@ -94,3 +94,14 @@
 2022-01-11 18:30:31,363 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
 2022-01-11 18:30:31,368 INFO c.d.j.p.c.PublisherConfig: Publisher connection Terminated successfully !!
 2022-01-11 18:30:31,368 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-01-12 00:26:28,223 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2022-01-12 00:26:28,833 INFO o.a.j.g.a.Load: Loading file: /Users/luismella/tools/Boss order cancelation Test Plan.jmx
+2022-01-12 00:26:28,833 INFO o.a.j.s.FileServer: Set new base='/Users/luismella/tools'
+2022-01-12 00:26:28,834 INFO o.a.j.s.SaveService: Loading file: /Users/luismella/tools/Boss order cancelation Test Plan.jmx
+2022-01-12 00:26:29,315 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2022-01-12 00:26:29,652 INFO o.a.j.s.FileServer: Set new base='/Users/luismella/tools'
+2022-01-12 11:48:59,993 INFO o.a.j.g.a.Load: Loading file: /Users/luismella/tools/StatusShipmentRetail Test Plan.jmx
+2022-01-12 11:49:00,000 INFO o.a.j.s.FileServer: Set new base='/Users/luismella/tools'
+2022-01-12 11:49:00,000 INFO o.a.j.s.SaveService: Loading file: /Users/luismella/tools/StatusShipmentRetail Test Plan.jmx
+2022-01-12 11:49:00,380 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2022-01-12 11:49:00,507 INFO o.a.j.s.FileServer: Set new base='/Users/luismella/tools'

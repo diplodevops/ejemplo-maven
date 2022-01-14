@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1089e8cc-a1e7-48d4-a884-8be2d6136fca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmeter.log" beforeDir="false" afterPath="$PROJECT_DIR$/jmeter.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopsusach2020/rest/RestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopsusach2020/rest/RestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/devopsusach2020/DevOpsUsach2020ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devopsusach2020/DevOpsUsach2020ApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +40,22 @@
       <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/.circleci" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DevOpsUsach2020ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DevOpsUsach2020" />
+      <option name="PACKAGE_NAME" value="com.devopsusach2020" />
+      <option name="MAIN_CLASS_NAME" value="com.devopsusach2020.DevOpsUsach2020ApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DevOpsUsach2020ApplicationTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
