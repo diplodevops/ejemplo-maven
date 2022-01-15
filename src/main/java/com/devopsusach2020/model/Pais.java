@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Pais implements Serializable{
 
 	/**
-	 * 
+	 * esta es la clase pais
 	 */
 	private static final long serialVersionUID = -2988002029080131424L;
 	
@@ -57,7 +57,26 @@ public class Pais implements Serializable{
 	public String getDate() {
 		return date;
 	}
+
+	// fija la fecha
 	public void setDate(String date) {
 		this.date = date;
 	}	
+
+	// vlaida las muertes
+	public boolean getValidaMuerte(){
+		int muertes = 0;
+		muertes = (confirmed - recovered);
+		muertes = (confirmed - recovered);
+		muertes = (confirmed - recovered);
+		muertes = (confirmed - recovered);
+
+		if( muertes == deaths){
+			return true;
+		}else{
+			return false;
+		}
+	} 
+
+
 }

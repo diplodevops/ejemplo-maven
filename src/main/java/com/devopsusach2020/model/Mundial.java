@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Mundial implements Serializable {
 
 	/**
-	 * 
+	 * esta es la clase mundial
 	 */
 	private static final long serialVersionUID = 3908000903498620526L;
 	
@@ -13,9 +13,13 @@ public class Mundial implements Serializable {
 	private int totaldeaths;
 	private int totalrecovered;
 	
+
+	// obtiene el total confimado
 	public int getTotalConfirmed() {
 		return totalconfirmed;
 	}
+
+	// fija el total confirmado
 	public void setTotalConfirmed(int totalConfirmed) {
 		this.totalconfirmed = totalConfirmed;
 	}

@@ -18,6 +18,11 @@ import com.google.gson.Gson;
 
 @RestController
 @RequestMapping(path = "/rest/mscovid")
+
+
+/**
+ * esta es la clase de rest
+ */
 public class RestData {
 	
 	private final static Logger LOGGER = Logger.getLogger("devops.subnivel.Control");
@@ -46,7 +51,13 @@ public class RestData {
 		int death = 0;
 		int recovered = 0;
 		Gson gson = new Gson();
-        Pais[] estados = gson.fromJson(call.getBody().toLowerCase(), Pais[].class);
+		String pais = call.getBody();
+		if (pais == null){
+			 pais = "";
+		}else{
+			pais = pais.toLowerCase();
+		}
+        Pais[] estados = gson.fromJson(pais, Pais[].class);
 
         for(Pais estado : estados) {
         	response.setDate(estado.getDate());
@@ -62,6 +73,7 @@ public class RestData {
     	response.setCountry(message);
     	response.setMensaje("ok");
 
+		//retorna
 		return response;		
 	}
 	
@@ -80,6 +92,7 @@ public class RestData {
         response.setTotalDeaths(estado.getTotalDeaths());
         response.setTotalRecovered(estado.getTotalRecovered());
 
+        // retorna
 		return response;		
 	}
 }
