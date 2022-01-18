@@ -37,6 +37,7 @@ pipeline {
             steps {
                 nexusPublisher nexusInstanceId: 'nexus-dev2', nexusRepositoryId: 'taller10', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: './DevOpsUsach2020-0.0.1.jar']], mavenCoordinate: [artifactId: 'DevOpsUsach2020', groupId: 'com.devopsusach2020', packaging: 'jar', version: '0.0.1']]]
          }
+        }
         stage('Run') {
             steps {
                 script {
