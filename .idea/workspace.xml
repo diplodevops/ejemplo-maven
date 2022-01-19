@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1089e8cc-a1e7-48d4-a884-8be2d6136fca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b6afec7e8e8a6cf0e6ca96223823f71cfd18052" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmeter.log" beforeDir="false" afterPath="$PROJECT_DIR$/jmeter.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopsusach2020/rest/RestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopsusach2020/rest/RestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopsusach2020/model/Mundial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopsusach2020/model/Mundial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopsusach2020/model/Pais.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopsusach2020/model/Pais.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/devopsusach2020/DevOpsUsach2020ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devopsusach2020/DevOpsUsach2020ApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +43,14 @@
       <recent name="$PROJECT_DIR$/.circleci" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.DevOpsUsach2020ApplicationTests.getTotalMundialTest">
+    <configuration name="DevOpsUsach2020Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.devopsusach2020.DevOpsUsach2020Application" />
+      <module name="DevOpsUsach2020" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DevOpsUsach2020ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DevOpsUsach2020" />
       <option name="PACKAGE_NAME" value="com.devopsusach2020" />
@@ -51,9 +60,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DevOpsUsach2020ApplicationTests.getTotalMundialTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DevOpsUsach2020" />
+      <option name="PACKAGE_NAME" value="com.devopsusach2020" />
+      <option name="MAIN_CLASS_NAME" value="com.devopsusach2020.DevOpsUsach2020ApplicationTests" />
+      <option name="METHOD_NAME" value="getTotalMundialTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DevOpsUsach2020ApplicationTests.getTotalPaisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DevOpsUsach2020" />
+      <option name="PACKAGE_NAME" value="com.devopsusach2020" />
+      <option name="MAIN_CLASS_NAME" value="com.devopsusach2020.DevOpsUsach2020ApplicationTests" />
+      <option name="METHOD_NAME" value="getTotalPaisTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DevOpsUsach2020ApplicationTests.getTotalMundialTest" />
         <item itemvalue="JUnit.DevOpsUsach2020ApplicationTests" />
+        <item itemvalue="JUnit.DevOpsUsach2020ApplicationTests.getTotalPaisTest" />
+        <item itemvalue="Application.DevOpsUsach2020Application" />
       </list>
     </recent_temporary>
   </component>

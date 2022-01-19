@@ -2,6 +2,7 @@ package com.devopsusach2020.model;
 
 import java.io.Serializable;
 
+
 public class Pais implements Serializable{
 
 	/**
@@ -10,6 +11,20 @@ public class Pais implements Serializable{
 	private static final long serialVersionUID = -2988002029080131424L;
 	
 	private int deaths;
+
+	@Override
+	public String toString() {
+		return "Pais{" +
+				"deaths=" + deaths +
+				", confirmed=" + confirmed +
+				", date='" + date + '\'' +
+				", mensaje='" + mensaje + '\'' +
+				", country='" + country + '\'' +
+				", recovered=" + recovered +
+				", active=" + active +
+				'}';
+	}
+
 	private int confirmed;
 	private String date;
 	private String mensaje;
