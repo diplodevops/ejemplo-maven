@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1089e8cc-a1e7-48d4-a884-8be2d6136fca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/devopsusach2020/DevOpsUsach2020ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devopsusach2020/DevOpsUsach2020ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +34,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -39,10 +42,11 @@
       <recent name="$PROJECT_DIR$/.circleci" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DevOpsUsach2020ApplicationTests.getTotalMundialTest">
-    <configuration name="DevOpsUsach2020Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.devopsusach2020.DevOpsUsach2020Application" />
+  <component name="RunManager" selected="JUnit.All in DevOpsUsach2020">
+    <configuration name="All in DevOpsUsach2020" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DevOpsUsach2020" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -76,12 +80,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.devopsusach2020 in DevOpsUsach2020" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DevOpsUsach2020" />
+      <option name="PACKAGE_NAME" value="com.devopsusach2020" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DevOpsUsach2020ApplicationTests.getTotalMundialTest" />
+        <item itemvalue="JUnit.All in DevOpsUsach2020" />
+        <item itemvalue="JUnit.com.devopsusach2020 in DevOpsUsach2020" />
         <item itemvalue="JUnit.DevOpsUsach2020ApplicationTests" />
+        <item itemvalue="JUnit.DevOpsUsach2020ApplicationTests.getTotalMundialTest" />
         <item itemvalue="JUnit.DevOpsUsach2020ApplicationTests.getTotalPaisTest" />
-        <item itemvalue="Application.DevOpsUsach2020Application" />
       </list>
     </recent_temporary>
   </component>
@@ -101,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642637289945</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Test 4">
+      <created>1642637384707</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1642637384707</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
