@@ -47,6 +47,21 @@ pipeline {
                 }
             }
         }
+        stage("Paso 5: Levantar Springboot APP"){
+            steps {
+                sh 'mvn spring-boot:run &'
+            }
+        }
+        stage("Paso 6: Dormir(Esperar 10sg) "){
+            steps {
+                sh 'sleep 10'
+            }
+        }
+        stage("Paso 7: Test Alive Service - Testing Application!"){
+            steps {
+                sh 'curl -X GET "http://localhost:8081/rest/mscovid/test?msg=testing"'
+            }
+        }
     }
     post {
         always {
