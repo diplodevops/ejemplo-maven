@@ -29,13 +29,16 @@ class DevOpsUsach2020ApplicationTests {
     @Test
     void getTotalMundialTest() {
         Mundial response = restData.getTotalMundial();
-
+        int r = 1 ;
+        assertEquals(1, r);
         System.out.println("RES: " + response);
     }
 
     @Test
     void getTotalMundialTest2() {
         Mundial response = restData.getTotalMundial();
+        int r = 1 + 1;
+        assertEquals(2, r);
 
         System.out.println("RES: " + response);
     }

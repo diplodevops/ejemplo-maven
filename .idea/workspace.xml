@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1089e8cc-a1e7-48d4-a884-8be2d6136fca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/devopsusach2020/DevOpsUsach2020ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devopsusach2020/DevOpsUsach2020ApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -94,6 +94,14 @@
       <option name="presentableId" value="Default" />
       <updated>1639836560714</updated>
     </task>
+    <task id="LOCAL-00001" summary="Test 4">
+      <created>1642637289945</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1642637289945</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,5 +115,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Test 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 4" />
   </component>
 </project>
