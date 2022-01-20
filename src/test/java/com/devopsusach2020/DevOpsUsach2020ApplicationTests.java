@@ -31,8 +31,12 @@ class DevOpsUsach2020ApplicationTests {
         Mundial response = restData.getTotalMundial();
 
         System.out.println("RES: " + response);
+    }
 
+    @Test
+    void getTotalMundialTest2() {
+        Mundial response = restData.getTotalMundial();
 
-        //assertEquals("ok", response.getStatus);
+        System.out.println("RES: " + response);
     }
 }

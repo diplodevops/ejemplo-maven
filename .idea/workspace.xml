@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1089e8cc-a1e7-48d4-a884-8be2d6136fca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b6afec7e8e8a6cf0e6ca96223823f71cfd18052" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopsusach2020/model/Mundial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopsusach2020/model/Mundial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopsusach2020/model/Pais.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopsusach2020/model/Pais.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/devopsusach2020/DevOpsUsach2020ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/devopsusach2020/DevOpsUsach2020ApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
