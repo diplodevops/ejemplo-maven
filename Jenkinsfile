@@ -48,6 +48,10 @@ pipeline {
                     sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=github-sonar'
                 }
             }
+                   
+        }    
+
+        stage("Paso 4.1: Análisis SonarQube y Subida"){
             steps{
                 nexusPublisher nexusInstanceId: 'nexus', 
                     nexusRepositoryId: 'devops-usach-nexus', 
@@ -64,10 +68,9 @@ pipeline {
                                     packaging: 'jar',
                                      version: '0.0.7'
                                 ]]]
-
-            }
+            }     
             
-        }                
+        }            
         
         stage('Paso 5: Bajar Nexus Stage') {
             steps {
