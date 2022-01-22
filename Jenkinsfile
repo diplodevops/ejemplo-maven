@@ -5,6 +5,10 @@ def jsonParse(def json) {
 }
 pipeline {
     agent any
+    environment {
+        NEXUS_USER         = credentials('nexus-user')
+        NEXUS_PASSWORD     = credentials('nexus-password')
+    }
     stages {
         stage('Paso 1: Compliar') {
             steps {
@@ -58,16 +62,22 @@ pipeline {
                     [$class: 'MavenPackage',
                        mavenAssetList: [
                             [classifier: '',
-                            extension: '.jar',
+                            extension: 'jar',
                             filePath: 'build/DevOpsUsach2020-0.0.1.jar']
                             ],
                         mavenCoordinate: [
                             artifactId: 'DevOpsUsach2020',
                             groupId: 'com.devopsusach2020',
                             packaging: 'jar',
-                            version: '0.0.2']
+                            version: '0.0.3']
                     ]
                     ]
+            }
+        }
+        stage(" Paso 6: Download: Nexus"){
+            steps {
+                //http://nexus3:10003/repository/devops-usach-nexus/com/devopsusach2020/DevOpsUsach2020/0.0.2/DevOpsUsach2020-0.0.2.jar
+                //sh ' curl -X GET -u $NEXUS_USER:$NEXUS_PASSWORD "http://nexus3:8081/repository/devops-usach/com/devopsusach2020/DevOpsUsach2020/0.0.1/DevOpsUsach2020-0.0.1..jar" -O'
             }
         }
 /*
