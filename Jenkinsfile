@@ -10,20 +10,7 @@ pipeline {
         NEXUS_PASS = credentials('nexus-pass')
     }
 
-    stages {
-
-        stage('Subir Nexus Stage') {
-            steps {
-                nexusPublisher nexusInstanceId: 'nexus', nexusRepositoryId: 'devops-usach-nexus', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: '/var/jenkins_home/workspace/job-pipeline-webhook/build/DevOpsUsach2020-0.0.1.jar']], mavenCoordinate: [artifactId: 'DevOpsUsach2020', groupId: 'com.devopsusach2020', packaging: 'jar', version: '0.0.7']]]
-            }
-        }
-        
-        stage('Bajar Nexus Stage') {
-            steps {
-                sh 'curl -X GET -u $NEXUS_USER:$NEXUS_PASS http://nexucito:8081/repository/devops-usach-nexus/com/devopsusach2020/DevOpsUsach2020/0.0.7/DevOpsUsach2020-0.0.7.jar -O'
-            }
-        }
-
+    stages {        
                  
         stage("Paso 1: Compilar"){
             steps {
