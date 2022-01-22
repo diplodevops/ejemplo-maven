@@ -65,7 +65,7 @@ pipeline {
                             artifactId: 'DevOpsUsach2020',
                             groupId: 'com.devopsusach2020',
                             packaging: 'jar',
-                            version: '0.0.1']
+                            version: '0.0.2']
                     ]
                     ]
             }
