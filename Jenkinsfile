@@ -4,8 +4,28 @@ def jsonParse(def json) {
 }
 pipeline {
     agent any
+
+     environment {
+        NEXUS_USER = credentials('nexus-user')
+        NEXUS_PASS = credentials('nexus-pass')
+    }
+
     stages {
-        stage("Paso 1: Compliarcito"){
+
+        stage('Subir Nexus Stage') {
+            steps {
+                nexusPublisher nexusInstanceId: 'nexus', nexusRepositoryId: 'devops-usach-nexus', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: '/var/jenkins_home/workspace/job-pipeline-webhook/build/DevOpsUsach2020-0.0.1.jar']], mavenCoordinate: [artifactId: 'DevOpsUsach2020', groupId: 'com.devopsusach2020', packaging: 'jar', version: '0.0.7']]]
+            }
+        }
+        
+        stage('Bajar Nexus Stage') {
+            steps {
+                sh 'curl -X GET -u $NEXUS_USER:$NEXUS_PASS http://nexucito:8081/repository/devops-usach-nexus/com/devopsusach2020/DevOpsUsach2020/0.0.7/DevOpsUsach2020-0.0.7.jar -O'
+            }
+        }
+
+                 
+        stage("Paso 1: Compilar"){
             steps {
                 script {
                 sh "echo 'Compile Code!'"
@@ -23,22 +43,43 @@ pipeline {
                 }
             }
         }
-        stage("Paso 3: Build .Jar"){
+        stage("Paso 3: build .jar"){
             steps {
                 script {
-                sh "echo 'Build .Jar!'"
+                sh "echo 'build .jar!'"
                 // Run Maven on a Unix agent.
                 sh "mvn clean package -e"
                 }
-            }
-            post {
-                //record the test results and archive the jar file.
-                success {
-                    archiveArtifacts artifacts:'build/*.jar'
-                }
+            }            
+        }
+
+        stage('4 Subir Nexus Stage') {
+            steps {
+                nexusPublisher nexusInstanceId: 'nexus', 
+                    nexusRepositoryId: 'devops-usach-nexus', 
+                    packages: [[$class: 'MavenPackage', 
+                                mavenAssetList: [[
+                                    classifier: '', 
+                                    extension: '', 
+                                    // filePath: '/var/jenkins_home/workspace/job-pipeline-webhook/build/DevOpsUsach2020-0.0.1.jar'
+                                    filePath: 'build/DevOpsUsach2020-0.0.1.jar'
+                                    ]],
+                                mavenCoordinate: [
+                                    artifactId: 'DevOpsUsach2020', 
+                                    groupId: 'com.devopsusach2020', 
+                                    packaging: 'jar',
+                                     version: '0.0.7'
+                                ]]]
             }
         }
-        stage("Paso 4: Análisis SonarQube"){
+        
+        stage('5 Bajar Nexus Stage') {
+            steps {
+                sh 'curl -X GET -u $NEXUS_USER:$NEXUS_PASS http://nexucito:8081/repository/devops-usach-nexus/com/devopsusach2020/DevOpsUsach2020/0.0.7/DevOpsUsach2020-0.0.7.jar -O'
+            }
+        }
+
+        stage("Paso 6: Análisis SonarQube"){
             steps {
                 withSonarQubeEnv('sonarqube') {
                     sh "echo 'Calling sonar Service in another docker container!'"
