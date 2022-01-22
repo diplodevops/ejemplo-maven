@@ -15,7 +15,7 @@ pipeline {
                 script {
                     sh "echo 'Compile Code!'"
                     // Run Maven on a Unix agent.
-                    sh 'mvn clean compile -e'
+                    //sh 'mvn clean compile -e'
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
                 script {
                     sh "echo 'Test Code!'"
                     // Run Maven on a Unix agent.
-                    sh 'mvn clean test -e'
+                    //sh 'mvn clean test -e'
                 }
             }
         }
@@ -48,7 +48,7 @@ pipeline {
                 withSonarQubeEnv('sonarqube') {
                     sh "echo 'Calling sonar Service in another docker container!'"
                     // Run Maven on a Unix agent to execute Sonar.
-                    sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=github-sonar'
+                   //sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=github-sonar'
                 }
             }
         }
@@ -78,7 +78,7 @@ pipeline {
             steps {
                 sh "echo 'fase success'"
                 //http://nexus3:10003/repository/devops-usach-nexus/com/devopsusach2020/DevOpsUsach2020/0.0.2/DevOpsUsach2020-0.0.2.jar
-                //sh ' curl -X GET -u $NEXUS_USER:$NEXUS_PASSWORD "http://nexus3:8081/repository/devops-usach/com/devopsusach2020/DevOpsUsach2020/0.0.1/DevOpsUsach2020-0.0.1..jar" -O'
+                sh ' curl -X GET -u $NEXUS_USER:$NEXUS_PASSWORD "http://nexus:8081/repository/devops-usach/com/devopsusach2020/DevOpsUsach2020/0.0.3/DevOpsUsach2020-0.0.3.jar" -O'
             }
         }
 /*
