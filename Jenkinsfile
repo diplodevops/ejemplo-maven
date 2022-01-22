@@ -48,7 +48,7 @@ pipeline {
                     sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=github-sonar'
                 }
             }
-            post{
+            steps{
                 nexusPublisher nexusInstanceId: 'nexus', 
                     nexusRepositoryId: 'devops-usach-nexus', 
                     packages: [[$class: 'MavenPackage', 
@@ -86,7 +86,7 @@ pipeline {
                 sh 'sleep 20'
             }
         }
-        
+
         stage("Paso 8: Test Alive Service - Testing Application!"){
             steps {
                 sh 'curl -X GET "http://nexucito:8081/rest/mscovid/test?msg=testing"'
