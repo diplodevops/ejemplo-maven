@@ -54,7 +54,7 @@ pipeline {
         }
         stage("Paso 6: Dormir(Esperar 10sg) "){
             steps {
-                sh 'sleep 10'
+                sh 'sleep 60'
             }
         }
         stage("Paso 7: Test Alive Service - Testing Application!"){
