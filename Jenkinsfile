@@ -15,7 +15,7 @@ pipeline {
                 script {
                     sh "echo 'Compile Code!'"
                     // Run Maven on a Unix agent.
-                    //sh 'mvn clean compile -e'
+                    sh 'mvn clean compile -e'
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
                 script {
                     sh "echo 'Test Code!'"
                     // Run Maven on a Unix agent.
-                    //sh 'mvn clean test -e'
+                    sh 'mvn clean test -e'
                 }
             }
         }
@@ -48,7 +48,7 @@ pipeline {
                 withSonarQubeEnv('sonarqube') {
                     sh "echo 'Calling sonar Service in another docker container!'"
                     // Run Maven on a Unix agent to execute Sonar.
-                   //sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=github-sonar'
+                   sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=github-sonar'
                 }
             }
         }
@@ -85,26 +85,19 @@ pipeline {
         }
         stage(" Paso 7: Levantar Springboot APP"){
             steps {
-                sh 'nohup bash java -jar DevOpsUsach2020-0.0.3.jar & >/dev/null'
+               sh 'nohup java -jar DevOpsUsach2020-0.0.3.jar & >/dev/null'
             }
         }
-
-/*
-        stage('Paso 6: Levantar Springboot APP') {
-            steps {
-                sh 'mvn spring-boot:run &'
-            }
-        }
-        stage('Paso 7: Dormir(Esperar 10sg) ') {
+        stage('Paso 8: Dormir(Esperar 60sg, que levante sprint boot) ') {
             steps {
                 sh 'sleep 60'
             }
         }
-        stage('Paso 8: Test Alive Service - Testing Application!') {
+        stage("Paso 9: Curl"){
             steps {
-                sh 'curl -X GET "http://localhost:8081/rest/mscovid/test?msg=testing"'
+               sh "curl -X GET 'http://localhost:8085/rest/mscovid/test?msg=testing'"
             }
-        }*/
+        }
     }
     post {
         always {
