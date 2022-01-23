@@ -80,6 +80,7 @@ pipeline {
                 sh "pwd"
                 //http://nexus3:10003/repository/devops-usach-nexus/com/devopsusach2020/DevOpsUsach2020/0.0.2/DevOpsUsach2020-0.0.2.jar
                 sh ' curl -X GET -u $NEXUS_USER:$NEXUS_PASSWORD "http://nexus:8081/repository/devops-usach/com/devopsusach2020/DevOpsUsach2020/0.0.3/DevOpsUsach2020-0.0.3.jar" -O'
+                sh "ls -l"
             }
         }
         stage(" Paso 7: Levantar Springboot APP"){
