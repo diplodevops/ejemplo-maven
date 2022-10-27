@@ -22,7 +22,7 @@ pipeline {
         stage('Step 3') {
             steps {
                 echo 'Step 3'
-                sh "ps -aux"
+                sh "echo 'Hola'"
             }
         }
         stage('Step 4') {
