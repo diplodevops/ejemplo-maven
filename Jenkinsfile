@@ -4,27 +4,21 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'TODO: build'
+                echo 'Building..'
                 sh "./mvnw clean compile -e"
             }
+        }
         stage('Test') {
             steps {
-                echo 'Todo: test'
+                echo 'Testing..'
                 sh "./mvnw.cmd clean test -e"
             }
-        stage('Package') {
+        }
+        stage('Deploy') {
             steps {
-                echo 'TODO: package'
+                echo 'Deploying....'
                 sh "./mvnw.cmd clean package -e"
-            }
-        stage('Run') {
-            steps {
-                echo 'TODO: run'
-                
             }
         }
     }
-}
-}
-}
 }
