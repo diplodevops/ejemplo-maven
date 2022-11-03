@@ -7,10 +7,35 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('Clean') {
+        stage('Step 1') {
             steps {
-                cleanWs()
+                echo 'Step 1'
+                sh "uname"
+            }
+        }
+        stage('Step 2') {
+            steps {
+                echo 'Step 2'
+                sh "java --version"
+            }
+        }
+        stage('Step 3') {
+            steps {
+                echo 'Step 3'
+                sh "echo 'Hola'"
+            }
+        }
+        stage('Step 4') {
+            steps {
+                echo 'Step 4'
+                sh "pwd"
+            }
+        }
+        stage('Good Bye') {
+            steps {
+                echo 'Good Bye Usach Ceres'
             }
         }
     }
 }
+
