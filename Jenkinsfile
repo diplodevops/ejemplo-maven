@@ -1,3 +1,3 @@
 library 'pipeline-devops'
 
-ejecucion
+ejecucion.call()
