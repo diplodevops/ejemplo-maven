@@ -8,7 +8,7 @@ pipeline {
         stage("Paso 1: Saludar"){
             steps {
                 script {
-                sh "echo 'Hello, World Usach (webhook)!'"
+                sh "echo 'Hello, World ldominguez (webhook)!'"
                 }
             }
         }
