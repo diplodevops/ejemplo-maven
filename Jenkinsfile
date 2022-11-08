@@ -15,7 +15,7 @@ pipeline {
         stage("Paso 2: Crear Archivo"){
             steps {
                 script {
-                sh "echo 'Hello, World Usach!!' > hello-devops-usach-.txt"
+                sh "echo 'Hello Stephanie, World Usach!!' > hello-devops-usach-.txt"
                 }
             }
         }
