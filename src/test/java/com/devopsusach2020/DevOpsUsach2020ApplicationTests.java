@@ -12,10 +12,10 @@ import org.springframework.test.context.ActiveProfiles;
 
 class DevOpsUsach2020ApplicationTests {
 
-  @Value("${1}")
+  @Value("${numberOne:1}")
   Integer numberOne;
   @Test
   void test(){
-    assertEquals(numberOne, 1);
+    assertEquals(1, numberOne);
   }
 }
