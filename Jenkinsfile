@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pre-Build') {
             steps {
-                echo 'TODO: Clean Work Space"
+                echo 'TODO: Clean Work Space'
                 // Clean before build
                 cleanWs()
             }
