@@ -20,5 +20,10 @@ pipeline {
                 sh "./mvnw clean package -e"
             }
         }
+        stage('Run') {
+            steps {
+                echo 'TODO: run'
+            }
+        }
     }
 }
