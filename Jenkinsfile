@@ -2,6 +2,13 @@ pipeline {
     agent any
 
     stages {
+        stage('Pre-Build') {
+            steps {
+                echo 'TODO: Clean Work Space"
+                // Clean before build
+                cleanWs()
+            }
+        }
         stage('Build') {
             steps {
                 echo 'TODO: build'
