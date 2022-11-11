@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage("SCM") {
             steps {
-                git branch: "feature-sonar", changelog: false, poll: false, url: "https://github.com/jaime-paredes/ejemplo-maven"
+                git branch: "feature-sonar", changelog: false, poll: false, url: "https://github.com/jaime-paredes/ejemplo-maven.git"
             }
         }
         stage("Build") {
