@@ -21,7 +21,7 @@ pipeline {
                 sh "mvn clean package"
             }
         }
-        stage("SonarQube") {
+        stage("SonarQube analysis") {
             steps {
                 withSonarQubeEnv(credentialsId: "access_token_sq", installationName: "MySonar") {
                     sh "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar -Dsonar.target=sonar.java.binaries"
