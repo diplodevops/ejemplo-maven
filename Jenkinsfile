@@ -5,8 +5,10 @@ pipeline {
         stage('Build') 
         {
             steps {
+                STAGE=env.STAGE_NAME
                 echo 'TODO: build'
                 sh "./mvnw clean compile -e"
+                echo '$STAGE'
             }
         }
         stage('Test') 
