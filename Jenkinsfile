@@ -29,10 +29,9 @@ pipeline {
                 echo 'TODO: running'
                 sh "nohup bash mvnw spring-boot:run &"
                 sleep 25
-
             }
         }
-        state('Testing')
+        stage('Testing')
         {
              steps { 
                  echo 'TODO: Testing 1 llamada simple'
