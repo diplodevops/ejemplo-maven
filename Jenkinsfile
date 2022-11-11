@@ -2,27 +2,43 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Build') 
+        {
             steps {
                 echo 'TODO: build'
                 sh "./mvnw clean compile -e"
             }
         }
-        stage('Test') {
+        stage('Test') 
+        {
             steps {
                 echo 'TODO: test'
                 sh "./mvnw clean test -e"
             }
         }
-        stage('Package') {
+        stage('Package') 
+        {
             steps {
                 echo 'TODO: package'
                 sh "./mvnw clean package -e"
             }
         }
-        stage('Run') {
+        stage('Run') 
+        {
             steps {
-                echo 'TODO: run'
+                echo 'TODO: running'
+                sh "nohup bash mvnw spring-boot:run &"
+                echo "sleep 25"
+
+            }
+        }
+        state('Testing')
+        {
+             steps { 
+                 echo 'TODO: Testing 1 llamada simple'
+                 sh "curl -X GET 'http://localhost:8081/rest/mscovid/test?msg=TestingSimple1'"
+                 rstat=$?
+                 echo '$rtat'
             }
         }
     }
