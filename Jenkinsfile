@@ -6,9 +6,9 @@ def jsonParse(def json) {
 
 pipeline {
     agent any
-    tools {
-        maven "Maven-1"
-    }
+    // tools {
+    //     maven "Maven-1"
+    // }
 
     stages {
         stage("SCM") {
