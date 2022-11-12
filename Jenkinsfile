@@ -1,40 +1,41 @@
+import groovy.json.JsonSlurperClassic
+
+def jsonParse(def json) {
+    new groovy.json.JsonSlurperClassic().parseText(json)
+}
 pipeline {
     agent any
-
     stages {
-        stage('Hello') {
+        stage("Saludar"){
             steps {
-                echo 'Hello World'
+                script {
+                sh "echo 'Hello, World Usach!'"
+                }
             }
         }
-        stage('Step 1') {
+        stage("Sonar: Análisis SonarQube"){
             steps {
-                echo 'Step 1'
-                sh "uname"
-            }
-        }
-        stage('Step 2') {
-            steps {
-                echo 'Step 2'
-                sh "java --version"
-            }
-        }
-        stage('Step 3') {
-            steps {
-                echo 'Step 3'
-                echo "Comando ps -aux"
-            }
-        }
-        stage('Step 4') {
-            steps {
-                echo 'Step 4'
-                sh "pwd"
-            }
-        }
-        stage('Good Bye') {
-            steps {
-                echo 'Good Bye Usach Ceres'
+                sh "echo 'Calling sonar Service in another docker container!'"
+                // Run Maven on a Unix agent to execute Sonar.
+                sh './mvnw clean verify sonar:sonar'
             }
         }
     }
+    post {
+        always {
+            sh "echo 'fase always executed post'"
+        }
+        success {
+            sh "echo 'fase success'"
+        }
+        failure {
+            sh "echo 'fase failure'"
+        }
+    }
 }
+
+
+
+
+
+
