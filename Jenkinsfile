@@ -7,7 +7,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Compile') {
             steps {
                 echo 'TODO: build'
                 sh "./mvnw clean compile -e"
@@ -19,15 +19,16 @@ pipeline {
                 sh "./mvnw clean test -e"
             }
         }
-        stage('Package') {
+        stage('Jar') {
             steps {
                 echo 'TODO: package'
                 sh "./mvnw clean package -e"
             }
         }
-        stage('Run') {
+        stage('UploadNexus') {
             steps {
-                echo 'TODO: run'
+                echo 'TODO: Manve'
+                sh "./mvnw clean install"
             }
         }
     }
