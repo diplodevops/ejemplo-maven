@@ -58,5 +58,14 @@ pipeline {
 		}
 	      
        }
+       stage ('Send to Github')
+       {
+       	   steps 
+		{
+		 echo 'TODO: Maven'
+		 sh "./mvnw install -Dgithub.downloads=true"
+		}
+       }
+
    }
 }
