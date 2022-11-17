@@ -62,7 +62,7 @@ pipeline {
        {
        	   steps 
 		{
-		 echo 'TODO: Maven'
+		 echo 'TODO: Maven to Github'
 		 sh "./mvnw install -Dgithub.downloads=true"
 		}
        }
