@@ -5,7 +5,10 @@ ejecucion.call()
 =======
 pipeline {
     agent any
-
+    tools 
+    {
+          maven 'maven_jenkins'
+    }
     stages {
         stage('Compile') {
             steps {
@@ -25,13 +28,19 @@ pipeline {
                 sh "./mvnw clean package -e"
             }
         }
-        stage('UploadNexus') {
+        stage('Maven Artifact') {
             steps {
-                echo 'TODO: Manve'
+                echo 'TODO: Maven'
                 sh "./mvnw clean install"
             }
         }
-    }
+       stage('ToRepository')
+       {
+           stages {
+                   nexusPublisher nexusInstanceId: 'nexus_docker', nexusRepositoryId: 'devops-usach-nexus', packages: [[$class: 'MavenPackage', mavenAssetList: [], mavenCoordinate: [artifactId: 'DevOpsUsach2020', groupId: 'com.devopsusach2020', packaging: 'jar', version: '001']]]
+                  }
+       }
+   }
 }
 
 >>>>>>> ad3f51b (Update and rename Jenkingfile to Jenkinsfile)
