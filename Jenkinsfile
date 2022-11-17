@@ -31,7 +31,7 @@ pipeline {
         }
        stage('ToRepository')
        {
-           stages {
+           steps {
                    nexusPublisher nexusInstanceId: 'nexus_docker', nexusRepositoryId: 'devops-usach-nexus', packages: [[$class: 'MavenPackage', mavenAssetList: [], mavenCoordinate: [artifactId: 'DevOpsUsach2020', groupId: 'com.devopsusach2020', packaging: 'jar', version: '001']]]
                   }
        }
