@@ -50,8 +50,8 @@ pipeline {
 	   steps
 		{
    		  sh 'curl http://nexus:8081/repository/devops-usach-nexus/com/devopsusach2020/DevOpsUsach2020/001/DevOpsUsach2020-001.jar --output /tmp/DevOpsUsach2020-001.jar'
-                  sh 'java -jar /tmp/DevOpsUsach2020-001.jar &'
-		  sh 'sleep 10'
+                  sh 'nohup bash java -jar /tmp/DevOpsUsach2020-001.jar & '
+		  sh 'sleep 2'
                   sh 'curl -X GET  http://localhost:8081/rest/mscovid/test?msg=testing'
      
 		}
