@@ -58,13 +58,15 @@ pipeline {
 		}
 	      
        }
-       stage ('Send to Github')
+       stage ('Send to Nexus 1.0.0')
        {
        	   steps 
 		{
-		 echo 'TODO: Maven to Github'
+		 echo 'TODO: Maven Install'
 		 sh "./mvnw install -Dgithub.downloads=true"
+                 nexusPublisher nexusInstanceId: 'nexus_docker', nexusRepositoryId: 'devops-usach-nexus', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: "${WORKSPACE}/build/DevOpsUsach2020-0.0.1.jar"]], mavenCoordinate: [artifactId: 'DevOpsUsach2020', groupId: 'com.devopsusach2020', packaging: 'jar', version: '100']]]
 		}
+           
        }
 
    }
