@@ -55,7 +55,7 @@ public class RestData {
         	death += estado.getDeaths();
         	recovered += estado.getRecovered();
         }
-        
+
     	response.setConfirmed(confirmed);
     	response.setDeaths(death);
     	response.setRecovered(recovered);
